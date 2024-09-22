@@ -8,6 +8,8 @@ sharebase="${localbase}"/share/webskel
 libexec="${localbase}"/libexec/webskel
 appname="${1}"
 skel="${2}"
+target=
+destdir=
 
 ##
 # functions
@@ -25,16 +27,16 @@ if [ -z "${skel}" ]; then
 fi
 if [ -e "${sharebase}"/"${skel}".skeleton ]; then
     target="${sharebase}"/"${skel}".skeleton
-    cwd=$(pwd)
-    cd ${target}
+    destdir="$(pwd)"/"${appname}"
+    cd "${target}"
     find . \
 	 -type d \
-	 -exec install -d -m u=rwx,g=rx,o= "${cwd}"/"${appname}"/"{}" \;	\
+	 -exec install -d -m u=rwx,g=rx,o= "${destdir}"/"{}" \;	\
 	 -exec echo -n . \;
     echo
     find . \
 	 -type f \
-	 -exec install -m u=rwx,g=rx,o= {} "${cwd}"/"${appname}"/"{}" \; \
+	 -exec install -m u=rwx,g=rx,o= {} "${destdir}"/"{}" \; \
 	 -exec echo -n . \;
     echo
     printok "initialized ${app}"
