@@ -1,9 +1,9 @@
 ## About
 
-The `webskel` utility provides skeletons (or "templates") to help you quickly
-start your next web application or service. The concept is inspired by skeleton
-directories in the UNIX world, where they serve as the basis for a new user's
-`${HOME}` directory.
+webskel is a command-line utility that provides skeletons (or "templates")
+to help you quickly start your next web application or service. The concept
+is inspired by skeleton directories from the UNIX world, where they can serve
+as the starting point for a new user's `${HOME}` directory.
 
 ## Examples
 
