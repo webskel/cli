@@ -1,24 +1,34 @@
 ## About
 
-The webskel utility provides skeletons (or "templates") that can give
-you a head start with your next web application or service. The concept
-is inspired by skeleton directories from the UNIX world - where they can
-be the basis for a new user's `${HOME}` directory.
+The `webskel` utility provides skeletons (or "templates") to help you quickly
+start your next web application or service. The concept is inspired by skeleton
+directories in the UNIX world, where they form the basis for creating a new
+user's `${HOME}` directory.
 
 ## Examples
 
-**webskel new**
+### CLI
 
-The following example demonstrates how the "new" command can create a
-"myapp" directory from the skeleton `@webskel/ruby-graphql-webpack-react`:
+#### webskel new
 
-   user@localhost$ webskel new @webskel/ruby-graphql-webpack-react myapp
+The `webskel new` command creates a new application from a specified skeleton.
+For example, the following command will create a "myapp" directory using the
+`@webskel/ruby-graphql-webpack-react` skeleton:
 
-**webskel ls**
+    user@localhost$ webskel new @webskel/ruby-graphql-webpack-react myapp
 
-The "ls" command provides a list of available skeletons:
+#### webskel ls
 
-   user@localhost webskel ls
+The `webskel ls` command lists all available skeletons. These skeletons are
+located in the [share/webskel/](share/webskel) directory, which is typically
+installed relative to `/usr/local`:
+
+	user@localhost webskel ls
+
+## Sources
+
+* [GitHub](https://github.com/webskel/cli#readme)
+* [GitLab](https://gitlab.com/webskel/cli#readme)
 
 ## License
 
