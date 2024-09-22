@@ -1,0 +1,3 @@
+[submodule "share/webskel/ruby-typescript-graphql-webpack-preact"]
+	path = share/webskel/ruby-typescript-graphql-webpack-preact
+	url = https://github.com/webskel/ruby-typescript-graphql-webpack-preact
