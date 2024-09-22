@@ -1,0 +1,44 @@
+#!/bin/sh
+set -e
+
+##
+# variables
+localbase=${LOCALBASE:-$(realpath "$(dirname "$0")"/../../..)}
+sharebase="${localbase}"/share/webskel
+libexec="${localbase}"/libexec/webskel
+appname="${1}"
+skel="${2}"
+
+##
+# functions
+. "${libexec}"/functions/print.sh
+
+##
+# main
+if [ -z "${appname}" ]; then
+    printerr "provide an application name"
+    exit 1
+fi
+if [ -z "${skel}" ]; then
+    printerr "provide a skeleton name"
+    exit 1
+fi
+if [ -e "${sharebase}"/"${skel}".skeleton ]; then
+    target="${sharebase}"/"${skel}".skeleton
+    cwd=$(pwd)
+    cd ${target}
+    find . \
+	 -type d \
+	 -exec install -d -m u=rwx,g=rx,o= "${cwd}"/"${appname}"/"{}" \;	\
+	 -exec echo -n . \;
+    echo
+    find . \
+	 -type f \
+	 -exec install -m u=rwx,g=rx,o= {} "${cwd}"/"${appname}"/"{}" \; \
+	 -exec echo -n . \;
+    echo
+    printok "initialized ${app}"
+else
+    printerr "skeleton ${skel} was not found"
+    exit 1
+fi
