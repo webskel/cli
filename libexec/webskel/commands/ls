@@ -9,9 +9,8 @@ libexec="${localbase}"/libexec/webskel
 
 ##
 # main
-echo "Skeletons "
 find "${sharebase}" \
      -type d \
      -maxdepth 1 \
      -name *.skeleton \
-     -exec basename {} \;
+     -exec basename {} .skeleton \;
