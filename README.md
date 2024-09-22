@@ -29,6 +29,7 @@ installed relative to `/usr/local`:
 
 * [GitHub](https://github.com/webskel/cli#readme)
 * [GitLab](https://gitlab.com/webskel/cli#readme)
+* [brew.bsd.cafe/@webskel](https://brew.bsd.cafe/webskel)
 
 ## License
 
