@@ -28,8 +28,8 @@ directory, which is typically installed relative to `/usr/local`:
 ## Sources
 
 * [GitHub](https://github.com/webskel/cli#readme)
-* [GitLab](https://gitlab.com/webskel/cli#readme)
-* [brew.bsd.cafe/@webskel](https://brew.bsd.cafe/webskel)
+* [GitLab](https://gitlab.com/webskel/cli#about)
+* [brew.bsd.cafe/@webskel](https://brew.bsd.cafe/webskel/cli#about)
 
 ## License
 
