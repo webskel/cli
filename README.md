@@ -15,7 +15,7 @@ The `webskel new` command creates a new application from a specified skeleton.
 For example, the following command will create a "myapp" directory using the
 `@webskel/ruby-graphql-webpack-react` skeleton:
 
-    user@localhost$ webskel new @webskel/ruby-graphql-webpack-react myapp
+    user@localhost$ webskel new ruby-typescript-graphql-webpack-preact myapp
 
 #### webskel ls
 
