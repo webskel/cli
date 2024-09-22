@@ -2,8 +2,8 @@
 
 The `webskel` utility provides skeletons (or "templates") to help you quickly
 start your next web application or service. The concept is inspired by skeleton
-directories in the UNIX world, where they form the basis for creating a new
-user's `${HOME}` directory.
+directories in the UNIX world, where they serve as the basis for a new user's
+`${HOME}` directory.
 
 ## Examples
 
