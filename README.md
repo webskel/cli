@@ -12,16 +12,16 @@ as the starting point for a new user's `${HOME}` directory.
 #### webskel new
 
 The `webskel new` command creates a new application from a specified skeleton.
-For example, the following command will create a "myapp" directory using the
-`ruby-typescript-graphql-webpack-preact` skeleton:
+For example, the following command will create a "myapp" directory from the
+`dolphins7` skeleton:
 
-    user@localhost$ webskel new ruby-typescript-graphql-webpack-preact myapp
+    user@localhost$ webskel new myapp dolphins7
 
 #### webskel ls
 
-The `webskel ls` command lists all available skeletons by name. These skeletons
-are located in the [share/webskel/](share/webskel) directory, which is typically
-installed relative to `/usr/local`:
+The `webskel ls` command lists all available skeletons by name, and includes a
+short description as well. These skeletons are located in the [share/webskel/](share/webskel)
+directory, which is typically installed relative to `/usr/local`:
 
 	user@localhost webskel ls
 

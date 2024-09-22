@@ -1,3 +1,3 @@
-[submodule "share/webskel/ruby-typescript-graphql-webpack-preact"]
-	path = share/webskel/ruby-typescript-graphql-webpack-preact
-	url = https://github.com/webskel/ruby-typescript-graphql-webpack-preact
+[submodule "share/webskel/dolphins7.skeleton"]
+	path = share/webskel/dolphins7.skeleton
+	url = https://github.com/webskel/dolphins7.skeleton
