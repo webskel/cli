@@ -1,0 +1,30 @@
+#!/bin/sh
+set -e
+
+##
+# variables
+localbase=${LOCALBASE:-$(realpath "$(dirname "$0")"/..)}
+libexec="${localbase}"/libexec/webskel
+
+##
+# functions
+# shellcheck source=/dev/null
+. "${libexec}"/functions/print.sh
+
+##
+# main
+case $1 in
+    "new")
+        "${libexec}"/commands/new
+        ;;
+    "ls")
+        "${libexec}"/commands/ls
+        ;;
+    *)
+        printf "Usage: webskel COMMAND [OPTIONS]\n"
+        printf "\n"
+        printf "General\n"
+        printf "  new       Create a new project from a specified skeleton\n"
+        printf "  ls        List available skeletons\n"
+        ;;
+esac
