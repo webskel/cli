@@ -11,21 +11,19 @@ dependencies.
 
 ### CLI
 
-#### webskel new
-
+* **webskel new** <br>
 The `webskel new` command creates a new application from a specified skeleton.
 For example, the following command will create a "myapp" directory from the
 `dolphins7` skeleton:
 
-    user@localhost$ webskel new myapp dolphins7
+        user@localhost$ webskel new myapp dolphins7
 
-#### webskel ls
-
+* **webskel ls** <br>
 The `webskel ls` command lists all available skeletons by name, and includes a
 short description as well. These skeletons are located in the [share/webskel/](share/webskel)
 directory, which is typically installed relative to `/usr/local`:
 
-	user@localhost webskel ls
+	    user@localhost webskel ls
 
 ## Sources
 
