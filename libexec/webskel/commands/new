@@ -39,7 +39,7 @@ if [ -e "${sharebase}"/"${skel}".skeleton ]; then
 	 -exec install -m u=rwx,g=rx,o= {} "${destdir}"/"{}" \; \
 	 -exec echo -n . \;
     echo
-    printok "initialized ${app}"
+    printok "initialized ${appname}"
 else
     printerr "skeleton ${skel} was not found"
     exit 1
