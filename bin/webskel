@@ -24,7 +24,7 @@ case $1 in
         printf "Usage: webskel COMMAND [OPTIONS]\n"
         printf "\n"
         printf "General\n"
-        printf "  new       Create a new project from a specified skeleton\n"
-        printf "  ls        List available skeletons\n"
+        printf "  [n]ew       Create a new project from a specified skeleton\n"
+        printf "  [l]ist      List available skeletons\n"
         ;;
 esac
