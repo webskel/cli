@@ -28,5 +28,6 @@ case $1 in
         printf "  [l]ist      List available skeletons\n\n"
         printf "Examples\n"
         printf "  user@localhost$ webskel new myapp dolphins7\n"
+        printf "\n"
         ;;
 esac
