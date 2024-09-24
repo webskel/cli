@@ -21,7 +21,7 @@ The `webskel list` command lists all available skeletons by name, and includes a
 short description as well. These skeletons are located in the [share/webskel/](share/webskel)
 directory, which is typically installed relative to `/usr/local`:
 
-	    user@localhost webskel ls
+	    user@localhost webskel list
 
 ## Sources
 
