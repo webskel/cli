@@ -28,17 +28,8 @@ fi
 if [ -e "${sharebase}"/"${skel}".skeleton ]; then
     target="${sharebase}"/"${skel}".skeleton
     destdir="$(pwd)"/"${appname}"
-    cd "${target}"
-    find . \
-	 -type d \
-	 -exec install -d -m u=rwx,g=rx,o= "${destdir}"/"{}" \;	\
-	 -exec echo -n . \;
-    echo
-    find . \
-	 -type f \
-	 -exec install -m u=rwx,g=rx,o= {} "${destdir}"/"{}" \; \
-	 -exec echo -n . \;
-    echo
+    "${libexec}"/scripts/mkdir "${target}" "${destdir}"
+    "${libexec}"/scripts/install "${target}" "${destdir}"
     printok "initialized ${appname}"
 else
     printerr "skeleton ${skel} was not found"
