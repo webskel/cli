@@ -10,6 +10,7 @@ destdir="${2}"
 # main
 cd "${target}"
 find . \
+     ! -name .git \
      -type d \
      -exec install -d -m u=rwx,g=rx,o= "${destdir}"/"{}" \;	\
      -exec echo -n . \;

@@ -11,6 +11,8 @@ destdir="${2}"
 cd "${target}"
 find . \
      -type f \
-     -exec install -m u=rwx,g=rx,o= {} "${destdir}"/"{}" \; \
+     ! -name ".git" \
+     ! -path "../.git/*" \
+     -exec install -m u=rwx,g=rx,o= "{}" "${destdir}"/"{}" \; \
      -exec echo -n . \;
 echo
