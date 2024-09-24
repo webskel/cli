@@ -25,6 +25,8 @@ case $1 in
         printf "\n"
         printf "General\n"
         printf "  [n]ew       Create a new project from a specified skeleton\n"
-        printf "  [l]ist      List available skeletons\n"
+        printf "  [l]ist      List available skeletons\n\n"
+        printf "Examples\n"
+        printf "  user@localhost$ webskel new myapp dolphins7\n"
         ;;
 esac
