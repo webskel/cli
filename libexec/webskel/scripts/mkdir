@@ -9,8 +9,9 @@ destdir="${2}"
 ##
 # main
 cd "${target}"
+echo -n "mkdir   "
 find . \
-     ! -name .git \
+     ! -name ".git" \
      -type d \
      -exec install -d -m u=rwx,g=rx,o= "${destdir}"/"{}" \;	\
      -exec echo -n . \;
