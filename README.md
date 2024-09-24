@@ -3,7 +3,7 @@
 webskel is a command-line utility that provides skeletons (or "templates")
 to help you quickly start your next web application or service. The concept
 is inspired by skeleton directories from the UNIX world - where they can serve
-as the starting point for a new user's `${HOME}` directory. For the time being,
+as the starting point for a new user's `${HOME}` directory. For the time being -
 there is only skeleton to choose from:
 [@webskel/dolphins7.skeleton](https://github.com/webskel/dolphins7.skeleton#readme).
 
