@@ -5,11 +5,18 @@ to help you quickly start your next web application or service. The concept
 is inspired by skeleton directories from the UNIX world - where they can serve
 as the starting point for a new user's `${HOME}` directory. For the time being,
 there is only skeleton to choose from:
-[@webskel/dolphins7](https://github.com/webskel/dolphins7.skeleton#readme)
+[@webskel/dolphins7.skeleton](https://github.com/webskel/dolphins7.skeleton#readme).
 
 ## Examples
 
 ### CLI
+
+**Overview**
+
+There are two commands: `new`, and `list`. Either can be shortened to `n`,
+or `l` respectively. The `new` command takes two arguments, followed by
+any options. And the `ls` command takes no arguments, followed by any
+options.
 
 * **webskel new** <br>
 The `webskel new` command creates a new application from a specified skeleton.
