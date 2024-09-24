@@ -9,7 +9,7 @@ destdir="${2}"
 ##
 # main
 cd "${target}"
-echo -n "mkdir   "
+echo -n "mkdir    "
 find . \
      ! -name ".git" \
      -type d \

@@ -9,7 +9,7 @@ destdir="${2}"
 ##
 # main
 cd "${target}"
-echo -n "install "
+echo -n "install  "
 find . \
      -type f \
      ! -name ".git" \
