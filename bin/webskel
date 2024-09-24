@@ -14,11 +14,11 @@ libexec="${localbase}"/libexec/webskel
 ##
 # main
 case $1 in
-    "new")
+    n|new)
         "${libexec}"/commands/new "${2}" "${3}"
         ;;
-    "ls")
-        "${libexec}"/commands/ls
+    l|list)
+        "${libexec}"/commands/list
         ;;
     *)
         printf "Usage: webskel COMMAND [OPTIONS]\n"
