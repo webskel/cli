@@ -12,6 +12,7 @@ cd "${target}"
 find . \
      -type f \
      ! -name ".git" \
+     ! -name ".gitignore" \
      ! -path "../.git/*" \
      -exec install -m u=rwx,g=rx,o= "{}" "${destdir}"/"{}" \; \
      -exec echo -n . \;
